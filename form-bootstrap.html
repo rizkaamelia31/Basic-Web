@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Form Pendaftaran Kerja</title>
+    
+</head>
+
+<body>
+    <div>
+        <h1 class="text-center my-5">Form Pendaftaran Kerja</h1>
+        <div class="card-body text-center">
+            <img src="https://www.jalurdalam.com/dist/images/logo-jd-dark.png" width="200px" height="auto"
+            class="d-inline-block align=center">
+        </div>  
+       
+    </div>  
+    <div class="container my-5">
+        <div class="row">
+            <div class="card px-5 py-3 my-3">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <!-- Input nama lengkap -->
+                    <div class="mb-3">
+                        <label for="nama_lengkap" class="form-label">Nama Lengkap</label>
+                        <input type="text" name="nama_lengkap" class="form-control" id="nama_lengkap"
+                            placeholder="Masukkan nama lengkap Anda">
+                    </div>
+                    <!-- End of Input nama lengkap -->
+
+                    <!-- Input Alamat Email -->
+                    <div class="mb-3">
+                        <label for="alamat_email" class="form-label">Alamat Email</label>
+                        <input type="text" name="alamat_email" class="form-control" id="alamat_email"
+                            placeholder="Masukkan Alamat Email anda">
+                    </div>
+                    <!-- End of Input Alamat Email -->
+
+                    <!-- Input Nomor Telpon -->
+                    <div class="mb-3">
+                        <label for="nomor_telpon" class="form-label">Nomor Telpon</label>
+                        <input type="text" name="nomor_telpon" class="form-control" id="nomor_telpon"
+                            placeholder="Masukkan Nomor Telpon Anda">
+                    </div>
+                    <!-- End of Input Nomor Telpon-->
+
+                     <!-- Input Agama -->
+                     <label for="agama">Agama</label>
+                     <select class="form-select mb-3" name="agama" id="agama">
+                         <option selected disabled>Pilih salah satu</option>
+                         <option value="Islam">Islam</option>
+                         <option value="Kristen">Kristen</option>
+                         <option value="Katholik">Katholik</option>
+                         <option value="Hindu">Hindu</option>
+                         <option value="Budha">Budha</option>
+                         <option value="Konghucu">Konghucu</option>
+                     </select>
+                     <!-- End of Input Agama -->
+
+                    <!-- Input Jenis Kelamin -->
+                    <div class="mb-3">
+                        <p class="mb-0">Jenis Kelamin</p>
+                        <input class="form-check-input" name="jenis_kelamin" type="radio" value="Laki - laki"
+                            id="laki_laki">
+                        <label class="form-check-label mr-5" for="laki_laki">
+                            Laki - Laki
+                        </label>
+
+                        <input class="form-check-input" name="jenis_kelamin" type="radio" value="Perempuan"
+                            id="perempuan">
+                        <label class="form-check-label" for="perempuan">
+                            Perempuan
+                        </label>
+                    </div>
+                    <!-- End of Jenis Kelamin -->
+
+                    <!-- Input Usia -->
+                    <div class="mb-3">
+                        <label for="usia" class="form-label">Usia</label>
+                        <input type="number" name="usia" class="form-control" id="usia"
+                            placeholder="Masukkan usia Anda">
+                    </div>
+                    <!-- End of Input Usia -->
+
+                    <!-- Input Tanggal Lahir -->
+                    <div class="mb-3">
+                        <label for="tanggal_lahir" class="form-label">Tanggal Lahir</label>
+                        <input type="date" name="tanggal_lahir" class="form-control" id="tanggal_lahir"
+                            placeholder="Masukkan tanggal lahir Anda">
+                    </div>
+                    <!-- End of Input Tanggal Lahir -->
+
+                    <!-- Input Pendidikan Saat Ini -->
+                    <label for="pendidikan_saat_ini">Pendidikan Saat Ini</label>
+                    <select class="form-select mb-3" name="pendidikan_saat_ini" id="pendidikan_saat_ini">
+                        <option selected disabled>Pilih salah satu</option>
+                        <option value="SMP">SMP</option>
+                        <option value="SMA">SMA</option>
+                        <option value="SMK">SMK</option>
+                        <option value="S1">S1</option>
+                        <option value="S2">S2</option>
+                    </select>
+                    <!-- End of Input Pendidikan Saat Ini -->
+
+                    <!-- Input Jurusan -->
+                    <div class="mb-3">
+                        <label for="jurusan" class="form-label">Jurusan</label>
+                        <input type="text" name="jurusan" class="form-control" id="jurusan"
+                            placeholder="Masukkan Jurusan Anda">
+                    </div>
+                    <!-- End of Input Jurusan -->
+
+                    <!-- Input Pengalaman Kerja -->
+                    <div class="mb-3">
+                        <label for="pengalaman_kerja" class="form-label">Pengalaman Kerja</label>
+                        <input type="text" name="pengalaman_kerja" class="form-control" id="pengalaman_kerja"
+                            placeholder="Masukkan Pengalaman Kerja Anda">
+                    </div>
+                    <!-- End of Input Pengalaman Kerja -->
+
+                     <!-- Input Alasan Mendaftar di Perusahaan -->
+                     <div class="mb-3">
+                        <label for="alasan_mendaftar" class="form-label">Alasan Mendaftar di Perusahaan ini</label>
+                        <input type="text" name="alasan_mendaftar" class="form-control" id="alasan_mendaftar"
+                            placeholder="Masukkan Alasan Mendaftar di Perusahaan ini">
+                    </div>
+                    <!-- End of Input Alasan Mendaftar di Perusahaan-->
+
+                    <!-- Input Posisi yang Dilamar -->
+                    <label for="agama">Posisi yang Dilamar</label>
+                    <select class="form-select mb-3" name="posisi_yang_dilamar" id="posisi_yang_dilamar">
+                        <option selected disabled>Pilih salah satu</option>
+                        <option value="Accounting">Accounting</option>
+                        <option value="Content Writer">Content Writer</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Fullstack Developer">Fullstack Developer</option>
+                        <option value="Human Resources">Human Resources</option>
+                        <option value="UI / UX designer">UI / UX designer</option>
+                    </select>
+                    <!-- End of Posisi yang Dilamar -->
+
+                    <!-- Input Upload CV-->
+                    <p class="mb-2">Upload CV</p>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="input" name="CV">
+                        <label class="input-group-text" for="input">Upload CV</label>
+                    </div>
+                    <!-- End of Input Upload CV-->
+
+                    <!-- Input Upload Lamaran Pekerjaan-->
+                    <p class="mb-2">Upload Lamaran Pekerjaan</p>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="input" name="lamaran pekerjaan">
+                        <label class="input-group-text" for="input">Upload Lamaran Pekerjaan</label>
+                    </div>
+                    <!-- End of Input Upload Lamaran Pekerjaan-->
+
+                    <!-- Button Submit -->
+                    <div class="d-flex justify-content-end mt-5">
+                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                    </div>
+                    <!-- End of Button Submit -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
